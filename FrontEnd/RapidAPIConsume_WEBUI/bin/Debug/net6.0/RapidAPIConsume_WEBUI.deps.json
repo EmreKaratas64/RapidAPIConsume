@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RapidAPIConsume_WEBUI/1.0.0": {
+        "runtime": {
+          "RapidAPIConsume_WEBUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RapidAPIConsume_WEBUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

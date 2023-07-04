@@ -1,0 +1,12 @@
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\bin\Debug\net6.0\RapidAPIConsume_BusinessLayer.deps.json
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\bin\Debug\net6.0\RapidAPIConsume_BusinessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\bin\Debug\net6.0\RapidAPIConsume_BusinessLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.csproj.AssemblyReference.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.AssemblyInfoInputs.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.AssemblyInfo.cs
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.csproj.CoreCompileInputs.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\refint\RapidAPIConsume_BusinessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\RapidAPIConsume_BusinessLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_BusinessLayer\obj\Debug\net6.0\ref\RapidAPIConsume_BusinessLayer.dll

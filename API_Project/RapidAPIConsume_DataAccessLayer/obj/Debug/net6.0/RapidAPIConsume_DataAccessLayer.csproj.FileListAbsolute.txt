@@ -1,0 +1,12 @@
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DataAccessLayer.deps.json
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DataAccessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DataAccessLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.csproj.AssemblyReference.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.AssemblyInfoInputs.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.AssemblyInfo.cs
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\refint\RapidAPIConsume_DataAccessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\ref\RapidAPIConsume_DataAccessLayer.dll
