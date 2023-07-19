@@ -10,3 +10,5 @@ D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\obj\D
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\obj\Debug\net6.0\refint\RapidAPIConsume_EntityLayer.dll
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\obj\Debug\net6.0\RapidAPIConsume_EntityLayer.pdb
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\obj\Debug\net6.0\ref\RapidAPIConsume_EntityLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\bin\Debug\net6.0\RapidAPIConsume_EntityLayer.runtimeconfig.json
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_EntityLayer\obj\Debug\net6.0\RapidAPIConsume_EntityLayer.genruntimeconfig.cache

@@ -10,3 +10,10 @@ D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\o
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\refint\RapidAPIConsume_DataAccessLayer.dll
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.pdb
 D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\ref\RapidAPIConsume_DataAccessLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DataAccessLayer.runtimeconfig.json
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DTOLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_EntityLayer.dll
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_DTOLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\bin\Debug\net6.0\RapidAPIConsume_EntityLayer.pdb
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.csproj.CopyComplete
+D:\C#-Asp_Projeler\RapidAPIConsume\API_Project\RapidAPIConsume_DataAccessLayer\obj\Debug\net6.0\RapidAPIConsume_DataAccessLayer.genruntimeconfig.cache
