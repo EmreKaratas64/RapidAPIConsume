@@ -30,4 +30,8 @@
     <ProjectReference Include="..\..\API_Project\RapidAPIConsume_EntityLayer\RapidAPIConsume_EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
