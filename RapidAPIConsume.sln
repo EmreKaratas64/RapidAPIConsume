@@ -9,17 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API_Project", "API_Project"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDo", "ToDo", "{91AB9EE8-492F-41BF-86AD-38AE638DB65C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_EntityLayer", "API_Project\RapidAPIConsume_EntityLayer\RapidAPIConsume_EntityLayer.csproj", "{8D11AE45-90D3-414C-8E25-DAAAADE8A935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_EntityLayer", "API_Project\RapidAPIConsume_EntityLayer\RapidAPIConsume_EntityLayer.csproj", "{8D11AE45-90D3-414C-8E25-DAAAADE8A935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_DataAccessLayer", "API_Project\RapidAPIConsume_DataAccessLayer\RapidAPIConsume_DataAccessLayer.csproj", "{C94FC2B4-97AE-40FB-B261-5ABCCC81000D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_DataAccessLayer", "API_Project\RapidAPIConsume_DataAccessLayer\RapidAPIConsume_DataAccessLayer.csproj", "{C94FC2B4-97AE-40FB-B261-5ABCCC81000D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_BusinessLayer", "API_Project\RapidAPIConsume_BusinessLayer\RapidAPIConsume_BusinessLayer.csproj", "{83152EA9-DE7B-4EDC-8DA1-D975F0C025D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_BusinessLayer", "API_Project\RapidAPIConsume_BusinessLayer\RapidAPIConsume_BusinessLayer.csproj", "{83152EA9-DE7B-4EDC-8DA1-D975F0C025D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_PresentationLayer", "API_Project\RapidAPIConsume_PresentationLayer\RapidAPIConsume_PresentationLayer.csproj", "{C59DC335-4976-4BCF-B371-257F6DE6507C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_PresentationLayer", "API_Project\RapidAPIConsume_PresentationLayer\RapidAPIConsume_PresentationLayer.csproj", "{C59DC335-4976-4BCF-B371-257F6DE6507C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_WEBUI", "FrontEnd\RapidAPIConsume_WEBUI\RapidAPIConsume_WEBUI.csproj", "{04830B05-6405-4A62-B891-6AE48AF2BECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_WEBUI", "FrontEnd\RapidAPIConsume_WEBUI\RapidAPIConsume_WEBUI.csproj", "{04830B05-6405-4A62-B891-6AE48AF2BECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidAPIConsume_DTOLayer", "API_Project\RapidAPIConsume_DTOLayer\RapidAPIConsume_DTOLayer.csproj", "{8D034BB7-30F5-41C7-B7BC-9593279E5183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidAPIConsume_DTOLayer", "API_Project\RapidAPIConsume_DTOLayer\RapidAPIConsume_DTOLayer.csproj", "{8D034BB7-30F5-41C7-B7BC-9593279E5183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

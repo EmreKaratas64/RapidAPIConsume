@@ -16,12 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\C#-Asp_Projeler\RapidAPIConsume\FrontEnd\RapidAPIConsume_WEBUI
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/AdminFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/AdminHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/AdminNavHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5OYXZIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/AdminScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/AdminSideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5TaWRlQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/AdminLayout/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Error.cshtml]
