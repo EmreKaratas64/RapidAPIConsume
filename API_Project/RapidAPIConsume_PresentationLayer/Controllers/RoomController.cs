@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using RapidAPIConsume_BusinessLayer.Abstract;
+using RapidAPIConsume_DTOLayer.DTOs.RoomDto;
 using RapidAPIConsume_EntityLayer.Concrete;
 
 namespace RapidAPIConsume_PresentationLayer.Controllers
@@ -9,10 +11,12 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
     public class RoomController : ControllerBase
     {
         private readonly IRoomService _roomService;
+        private readonly IMapper _mapper;
 
-        public RoomController(IRoomService roomService)
+        public RoomController(IRoomService roomService, IMapper mapper)
         {
             _roomService = roomService;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -31,17 +35,24 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
         }
 
         [HttpPost]
-        public IActionResult RoomAdd(Room Room)
+        public IActionResult RoomAdd(AddRoomDto addRoomDto)
         {
-            _roomService.TInsert(Room);
-            return Ok();
+            if (!ModelState.IsValid)
+                return BadRequest();
+            var values = _mapper.Map<Room>(addRoomDto);
+            _roomService.TInsert(values);
+            return Ok("Başarıyla Eklendi");
         }
 
         [HttpPut]
-        public IActionResult RoomUpdate(Room Room)
+        public IActionResult RoomUpdate(UpdateRoomDto updateRoomDto)
         {
-            _roomService.TUpdate(Room);
-            return Ok();
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var values = _mapper.Map<Room>(updateRoomDto);
+            _roomService.TUpdate(values);
+            return Ok("Başarıyla Güncellendi");
         }
 
         [HttpGet("{id}")]

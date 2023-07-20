@@ -1,0 +1,54 @@
+﻿@model Staff
+@{
+    ViewData["Title"] = "GetStaffAsync";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+ <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Personel Düzenle</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <input type="hidden" asp-for="StaffID" />
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">İsim</label>
+                            <div class="col-sm-10">
+                                <input type="text" asp-for="Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Ünvan</label>
+                            <div class="col-sm-10">
+                                <input type="text" asp-for="Title" class="form-control">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Sosyal Medya1</label>
+                            <div class="col-sm-10">
+                                <input type="text" asp-for="SocialMedia1" class="form-control">
+                            </div>
+                        </div>
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Sosyal Medya2</label>
+                            <div class="col-sm-10">
+                                <input type="text" asp-for="SocialMedia2" class="form-control">
+                            </div>
+                        </div>
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Sosyal Medya3</label>
+                            <div class="col-sm-10">
+                                <input type="text" asp-for="SocialMedia3" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-warning">Güncelle</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
