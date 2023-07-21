@@ -48,6 +48,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/CustomerLayoutFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/CustomerLayoutHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/CustomerLayoutHeaderInBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dEhlYWRlckluQm9keS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/CustomerLayoutScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dFNjcmlwdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Room/AddRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxBZGRSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/_CustomerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -103,7 +127,3 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-rmuiwk7tr8

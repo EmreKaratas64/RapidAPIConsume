@@ -8,7 +8,10 @@ builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddMvc().AddRazorOptions(options =>
+{
+    options.ViewLocationFormats.Add("/Views/Home/{0}.cshtml");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

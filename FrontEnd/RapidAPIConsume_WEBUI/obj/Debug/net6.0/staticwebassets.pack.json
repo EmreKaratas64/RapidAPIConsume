@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RapidAPIConsume_WEBUI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RapidAPIConsume_WEBUI.bundle.scp.css"
-    },
-    {
       "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\adminweb\\app-calender.html",
       "PackagePath": "staticwebassets\\adminweb\\app-calender.html"
     },
