@@ -20,7 +20,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public List<WorkLocation> TGetAll()
         {
-            throw new NotImplementedException();
+            return _workLocationDal.GetAll();
         }
 
         public WorkLocation TGetById(int id)
@@ -30,7 +30,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public void TInsert(WorkLocation entity)
         {
-            throw new NotImplementedException();
+            _workLocationDal.Insert(entity);
         }
 
         public void TUpdate(WorkLocation entity)

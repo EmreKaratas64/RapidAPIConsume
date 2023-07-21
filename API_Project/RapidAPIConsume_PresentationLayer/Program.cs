@@ -22,6 +22,8 @@ builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 builder.Services.AddScoped<IServiceDal, EfServiceDal>();
 builder.Services.AddScoped<IServiceService, ServiceManger>();
+builder.Services.AddScoped<IWorkLocationDal, EfWorkLocationDal>();
+builder.Services.AddScoped<IWorkLocationService, WorkLocationManager>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
