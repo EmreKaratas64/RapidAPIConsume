@@ -1,9 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using RapidAPIConsume_EntityLayer.Concrete;
+using System.Text;
 
 namespace RapidAPIConsume_WEBUI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public HomeController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
         public IActionResult HomePage()
         {
             return View();
@@ -29,5 +39,26 @@ namespace RapidAPIConsume_WEBUI.Controllers
             return PartialView();
         }
 
+        public PartialViewResult CustomerLayoutSubscribePartialView()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddSubscribe(Subscribe subscribe)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(subscribe);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PostAsync("http://localhost:5291/api/Subscribe", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonSubscribe = jsonData;
+                return Json(jsonSubscribe);
+            }
+            return RedirectToAction("HomePage", "Home");
+
+
+        }
     }
 }

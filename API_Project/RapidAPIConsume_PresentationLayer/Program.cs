@@ -14,6 +14,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<Context>();
 
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IStaffDal, EfStaffDal>();
 builder.Services.AddScoped<IStaffService, StaffManager>();
 builder.Services.AddScoped<IRoomDal, EfRoomDal>();
@@ -24,6 +26,8 @@ builder.Services.AddScoped<IServiceDal, EfServiceDal>();
 builder.Services.AddScoped<IServiceService, ServiceManger>();
 builder.Services.AddScoped<IWorkLocationDal, EfWorkLocationDal>();
 builder.Services.AddScoped<IWorkLocationService, WorkLocationManager>();
+builder.Services.AddScoped<ISubscribeDal, EfSubscribeDal>();
+builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 

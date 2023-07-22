@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dFNjcmlwdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/CustomerLayoutSubscribePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxheW91dFN1YnNjcmliZVBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -82,6 +86,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Service/ListServices.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxMaXN0U2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageAbout/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VBYm91dFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageRooms/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VSb29tc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageServices/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VTZXJ2aWNlc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageTeam/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VUZWFtXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageTestimonials/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VUZXN0aW1vbmlhbHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/HomePageTrailer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVBhZ2VUcmFpbGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Error.cshtml]

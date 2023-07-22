@@ -33,10 +33,5 @@ namespace RapidAPIConsume_WEBUI.Controllers
             return PartialView();
         }
 
-        public IActionResult Test()
-        {
-            return View();
-        }
-
     }
 }

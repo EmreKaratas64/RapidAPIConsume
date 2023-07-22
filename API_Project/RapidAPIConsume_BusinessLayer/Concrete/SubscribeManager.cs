@@ -20,7 +20,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public List<Subscribe> TGetAll()
         {
-            throw new NotImplementedException();
+            return _subscribeDal.GetAll();
         }
 
         public Subscribe TGetById(int id)
@@ -30,7 +30,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public void TInsert(Subscribe entity)
         {
-            throw new NotImplementedException();
+            _subscribeDal.Insert(entity);
         }
 
         public void TUpdate(Subscribe entity)

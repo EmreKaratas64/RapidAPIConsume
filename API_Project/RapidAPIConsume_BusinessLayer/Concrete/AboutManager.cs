@@ -20,12 +20,12 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public List<About> TGetAll()
         {
-            throw new NotImplementedException();
+            return _aboutDal.GetAll();
         }
 
         public About TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _aboutDal.GetById(id);
         }
 
         public void TInsert(About entity)
@@ -35,7 +35,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public void TUpdate(About entity)
         {
-            throw new NotImplementedException();
+            _aboutDal.Update(entity);
         }
     }
 }

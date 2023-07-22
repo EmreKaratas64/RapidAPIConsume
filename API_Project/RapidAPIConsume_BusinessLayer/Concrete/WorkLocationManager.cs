@@ -35,7 +35,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public void TUpdate(WorkLocation entity)
         {
-            throw new NotImplementedException();
+            _workLocationDal.Update(entity);
         }
     }
 }
