@@ -1,0 +1,45 @@
+﻿@model List<CurrencyResult.Exchange_Rates>
+@{
+    ViewData["Title"] = "IDMBMovies";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+ 
+
+<div class="row">
+     <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Döviz Kurları</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Döviz Kodu</th>
+                                <th>TRY karşılığı</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+            {
+                    <tr>
+                                <th>@item.currency</th>
+                                <td>@item.exchange_rate_buy</td>
+
+                            </tr>
+            }
+                                           
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       
+
+

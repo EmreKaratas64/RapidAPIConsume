@@ -1,4 +1,5 @@
 ﻿
+using RapidAPIConsume_EntityLayer.Concrete;
 using System.ComponentModel.DataAnnotations;
 
 namespace RapidAPIConsume_WEBUI.DTOs.BookingDtos
@@ -17,7 +18,7 @@ namespace RapidAPIConsume_WEBUI.DTOs.BookingDtos
         public string RoomCount { get; set; }
         public string SpecialRequest { get; set; }
         public string Description { get; set; }
-        public string Status { get; set; }
+        public BookingStatus Status { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
     }
