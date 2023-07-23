@@ -15,27 +15,27 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public void TDelete(Booking entity)
         {
-            throw new NotImplementedException();
+            _bookingDal.Delete(entity);
         }
 
         public List<Booking> TGetAll()
         {
-            throw new NotImplementedException();
+            return _bookingDal.GetAll();
         }
 
         public Booking TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _bookingDal.GetById(id);
         }
 
         public void TInsert(Booking entity)
         {
-            throw new NotImplementedException();
+            _bookingDal.Insert(entity);
         }
 
         public void TUpdate(Booking entity)
         {
-            throw new NotImplementedException();
+            _bookingDal.Update(entity);
         }
     }
 }

@@ -28,6 +28,8 @@ builder.Services.AddScoped<IWorkLocationDal, EfWorkLocationDal>();
 builder.Services.AddScoped<IWorkLocationService, WorkLocationManager>();
 builder.Services.AddScoped<ISubscribeDal, EfSubscribeDal>();
 builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
+builder.Services.AddScoped<IBookingDal, EfBookingDal>();
+builder.Services.AddScoped<IBookingService, BookingManager>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
