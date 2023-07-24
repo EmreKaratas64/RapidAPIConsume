@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "ContactMessage";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url(/hotel-html-template/img/carousel-1.jpg);">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center pb-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">İletişim</h1>
+                   
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+
+    <!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Bize Yazın</h6>
+            <h1 class="mb-5">Herhangi bir sorunuz olursa<span class="text-primary text-uppercase"> Bize Yazın</span></h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">General</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <iframe class="position-relative rounded w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4869.487650151299!2d16.91641802549942!3d52.39319413955257!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b25e25c6997%3A0x4ba31cb5fc948fa7!2sPoznan%20Teknoloji%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1690185980816!5m2!1str!2str"
+                    frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <form method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="txtname" placeholder="Adınız">
+                                    <label for="name">Adınız</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="txtemail" placeholder="Mail adresi">
+                                    <label for="email">Mail adresi</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="txtsubject" placeholder="Konu">
+                                    <label for="subject">Konu</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Mesajınız..." id="txtmessage" style="height: 150px"></textarea>
+                                    <label for="message">Mesaj</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button id="btnsendmessage" class="btn btn-primary w-100 py-3" type="button">Gönder</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+<script>
+    $("#btnsendmessage").click(function(){
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if ($("#txtemail").val().match(validRegex)) {
+
+        let values = {
+            Name:$("#txtname").val(),
+            Mail:$("#txtemail").val(),
+            Subject:$("#txtsubject").val(),
+            Message:$("#txtmessage").val()
+        };
+
+        $.ajax({
+            type:"post",
+            url:"/Home/SendContactMessage/",
+            data: values,
+            success:function(func){
+                let result = jQuery.parseJSON(func);
+                Swal.fire(
+              'Tebrikler!',
+              'Mesajınız başarıyla gönderildi!',
+              'success'
+            )
+            }
+        });
+    }
+    else{
+           Swal.fire(
+              'Opps!',
+              'Mesajınızda geçersiz değerler var!',
+              'danger'
+            )
+    }
+    });
+</script>

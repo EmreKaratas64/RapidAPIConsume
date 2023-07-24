@@ -1,0 +1,71 @@
+﻿@model UpdateAboutDto
+@{
+    ViewData["Title"] = "AboutAdmin";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+ <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hakkımızda Güncelle</h4>
+                <div class="basic-form">
+                    <form>
+                        <input type="hidden" id="aboutId" asp-for="AboutID">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Başlık 1</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="txtTitle1" asp-for="Title1" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Başlık 2</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="txtTitle2" asp-for="Title2" class="form-control">
+                            </div>
+                        </div>
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">İçerik</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control h-150px" id="txtContent" asp-for="Content" rows="6" ></textarea>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button id="btnupdateabout" type="button" class="btn btn-outline-warning">Düzenle</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $("#btnupdateabout").click(function(){
+
+        let values = {
+            AboutID: $("#aboutId").val(),
+            Title1:$("#txtTitle1").val(),
+            Title2:$("#txtTitle2").val(),
+            Content:$("#txtContent").val()
+        };
+
+        $.ajax({
+            type:"post",
+            url:"/AdminLayout/UpdateAboutAdmin/",
+            data: values,
+            success:function(func){
+                let result = jQuery.parseJSON(func);
+                Swal.fire(
+              'Tebrikler!',
+              'Hakkımızda başarıyla güncellendi!',
+              'success'
+            )
+            }
+        });
+    });
+</script>

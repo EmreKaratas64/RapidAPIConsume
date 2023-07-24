@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using RapidAPIConsume_DTOLayer.DTOs.RoomDto;
 using RapidAPIConsume_EntityLayer.Concrete;
+using RapidAPIConsume_WEBUI.DTOs.AboutDtos;
 using RapidAPIConsume_WEBUI.DTOs.AccountDtos;
 using RapidAPIConsume_WEBUI.DTOs.BookingDtos;
 using RapidAPIConsume_WEBUI.DTOs.ServiceDtos;
@@ -18,6 +19,8 @@ namespace RapidAPIConsume_WEBUI.Mapping
             CreateMap<RegisterDto, AppUser>().ReverseMap();
             CreateMap<LoginDto, AppUser>().ReverseMap();
             CreateMap<AddBookingDto, Booking>().ReverseMap();
+            CreateMap<UpdateAboutDto, About>().ReverseMap();
+            CreateMap<UpdateRoomDto, Room>().ReverseMap();
         }
     }
 }

@@ -356,9 +356,6 @@ namespace RapidAPIConsume_DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MessageCategoryID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -368,8 +365,6 @@ namespace RapidAPIConsume_DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ContactID");
-
-                    b.HasIndex("MessageCategoryID");
 
                     b.ToTable("Contacts");
                 });
@@ -397,23 +392,6 @@ namespace RapidAPIConsume_DataAccessLayer.Migrations
                     b.HasKey("GuestID");
 
                     b.ToTable("Guests");
-                });
-
-            modelBuilder.Entity("RapidAPIConsume_EntityLayer.Concrete.MessageCategory", b =>
-                {
-                    b.Property<int>("MessageCategoryID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MessageCategoryID"), 1L, 1);
-
-                    b.Property<string>("MessageCategoryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("MessageCategoryID");
-
-                    b.ToTable("MessageCategories");
                 });
 
             modelBuilder.Entity("RapidAPIConsume_EntityLayer.Concrete.Room", b =>
@@ -685,22 +663,6 @@ namespace RapidAPIConsume_DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("WorkLocation");
-                });
-
-            modelBuilder.Entity("RapidAPIConsume_EntityLayer.Concrete.Contact", b =>
-                {
-                    b.HasOne("RapidAPIConsume_EntityLayer.Concrete.MessageCategory", "MessageCategory")
-                        .WithMany("Contacts")
-                        .HasForeignKey("MessageCategoryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("MessageCategory");
-                });
-
-            modelBuilder.Entity("RapidAPIConsume_EntityLayer.Concrete.MessageCategory", b =>
-                {
-                    b.Navigation("Contacts");
                 });
 
             modelBuilder.Entity("RapidAPIConsume_EntityLayer.Concrete.WorkLocation", b =>

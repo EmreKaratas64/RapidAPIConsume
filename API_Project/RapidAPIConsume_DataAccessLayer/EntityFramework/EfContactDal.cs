@@ -5,7 +5,7 @@ using RapidAPIConsume_EntityLayer.Concrete;
 
 namespace RapidAPIConsume_DataAccessLayer.EntityFramework
 {
-    internal class EfContactDal : GenericRepository<Contact>, IContactDal
+    public class EfContactDal : GenericRepository<Contact>, IContactDal
     {
         public EfContactDal(Context context) : base(context)
         {

@@ -1,14 +1,55 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using RapidAPIConsume_EntityLayer.Concrete;
+using RapidAPIConsume_WEBUI.DTOs.AboutDtos;
 using RapidAPIConsume_WEBUI.DTOs.CurrencyDtos;
+using System.Text;
 
 namespace RapidAPIConsume_WEBUI.Controllers
 {
     public class AdminLayoutController : Controller
     {
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public AdminLayoutController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
         public IActionResult Layout()
         {
             return View();
+        }
+
+        public async Task<IActionResult> AboutAdmin()
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("http://localhost:5291/api/About");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var value = JsonConvert.DeserializeObject<List<UpdateAboutDto>>(jsonData);
+                var about = value.TakeLast(1).FirstOrDefault();
+                return View(about);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateAboutAdmin(UpdateAboutDto updateAboutDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var about = await client.GetAsync($"http://localhost:5291/api/About/{updateAboutDto.AboutID}");
+            var jsonData = await about.Content.ReadAsStringAsync();
+            var deserializeAbout = JsonConvert.DeserializeObject<About>(jsonData);
+            deserializeAbout.Title1 = updateAboutDto.Title1;
+            deserializeAbout.Title2 = updateAboutDto.Title2;
+            deserializeAbout.Content = updateAboutDto.Content;
+            var serializeAbout = JsonConvert.SerializeObject(deserializeAbout);
+            StringContent content = new StringContent(serializeAbout, Encoding.UTF8, "application/json");
+            await client.PutAsync("http://localhost:5291/api/About", content);
+            return Json(serializeAbout);
+
         }
 
         public PartialViewResult AdminHeader()

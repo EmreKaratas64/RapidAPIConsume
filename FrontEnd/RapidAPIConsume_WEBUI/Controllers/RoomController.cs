@@ -71,17 +71,17 @@ namespace RapidAPIConsume_WEBUI.Controllers
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var value = JsonConvert.DeserializeObject<Room>(jsonData);
+                var value = JsonConvert.DeserializeObject<UpdateRoomDto>(jsonData);
                 return View(value);
             }
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> GetRoom(Room Room)
+        public async Task<IActionResult> GetRoom(UpdateRoomDto updateRoomDto)
         {
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(Room);
+            var jsonData = JsonConvert.SerializeObject(updateRoomDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PutAsync("http://localhost:5291/api/Room/", stringContent);
             if (responseMessage.IsSuccessStatusCode)

@@ -58,7 +58,27 @@ namespace RapidAPIConsume_WEBUI.Controllers
             }
             return RedirectToAction("HomePage", "Home");
 
+        }
 
+        public IActionResult ContactMessage()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SendContactMessage(Contact contact)
+        {
+            contact.Date = DateTime.Now;
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(contact);
+            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var result = await client.PostAsync("http://localhost:5291/api/Contact", content);
+            if (result.IsSuccessStatusCode)
+            {
+                //var jsonContact = jsonData;
+                return Json(jsonData);
+            }
+            return RedirectToAction("ContactMessage");
         }
     }
 }
