@@ -72,6 +72,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xMaXN0Qm9va2luZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Guest/AddGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcQWRkR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Guest/GetGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcR2V0R3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Guest/ListGuests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcTGlzdEd1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Home/ContactMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0TWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
