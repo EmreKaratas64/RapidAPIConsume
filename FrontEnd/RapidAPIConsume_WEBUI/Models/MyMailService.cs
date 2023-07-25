@@ -5,7 +5,7 @@ namespace RapidAPIConsume_WEBUI.Models
 {
     public class MyMailService
     {
-        public void SendMail(string mail)
+        public void SendMail(string mail, string title, string content)
         {
             MimeMessage mimeMessage = new MimeMessage();
             MailboxAddress mailboxAddressFrom = new MailboxAddress("HotelAPI Admin", "coreblog@ilkportfolio.com");
@@ -15,9 +15,9 @@ namespace RapidAPIConsume_WEBUI.Models
             mimeMessage.To.Add(mailboxAddressTo);
             var bodyBuilder = new BodyBuilder();
 
-            bodyBuilder.TextBody = "Hesabınız başarıyla oluşturuldu\n\nHesabınız için doğrulama kodu: buraya sayı gelecek. App user tablosuna confirm code kolonu ekle!!";
+            bodyBuilder.TextBody = content;
             mimeMessage.Body = bodyBuilder.ToMessageBody();
-            mimeMessage.Subject = "HotelAPI Hesap Onay Kodu";
+            mimeMessage.Subject = title;
 
             SmtpClient client = new SmtpClient();
             client.Connect("webmail.ilkportfolio.com", 587, false);

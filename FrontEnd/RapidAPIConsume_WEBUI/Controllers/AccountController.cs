@@ -37,7 +37,7 @@ namespace RapidAPIConsume_WEBUI.Controllers
                 var result = await _userManager.CreateAsync(user, registerDto.Password);
                 if (result.Succeeded)
                 {
-                    mailService.SendMail(registerDto.Mail);
+                    mailService.SendMail(registerDto.Mail, "HotelAPI hesap onay", "Tebrikler HotelAPI hesabınız başarıyla oluşturuldu\n\nHesap onay kodunuz: buraya hesap onay kodu gelecek!!");
                     return RedirectToAction("ListStaffs", "Staff");
                 }
                 else
