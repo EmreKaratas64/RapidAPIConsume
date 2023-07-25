@@ -7,7 +7,6 @@ using RapidAPIConsume_DataAccessLayer.EntityFramework;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -36,6 +35,8 @@ builder.Services.AddScoped<IGuestDal, EfGuestDal>();
 builder.Services.AddScoped<IGuestService, GuestManager>();
 builder.Services.AddScoped<ISendMessageDal, EfSendMessageDal>();
 builder.Services.AddScoped<ISendMessageService, SendMessageManager>();
+builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
+builder.Services.AddScoped<IAppUserService, AppUserManager>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
@@ -46,6 +47,8 @@ builder.Services.AddCors(opt =>
         opts.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
 });
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+           options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 var app = builder.Build();
 
@@ -55,6 +58,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRouting();
+app.UseStaticFiles();
 app.UseCors("APICors");
 app.UseAuthorization();
 

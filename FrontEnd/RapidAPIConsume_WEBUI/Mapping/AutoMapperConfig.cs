@@ -3,6 +3,7 @@ using RapidAPIConsume_DTOLayer.DTOs.RoomDto;
 using RapidAPIConsume_EntityLayer.Concrete;
 using RapidAPIConsume_WEBUI.DTOs.AboutDtos;
 using RapidAPIConsume_WEBUI.DTOs.AccountDtos;
+using RapidAPIConsume_WEBUI.DTOs.AppUserDtos;
 using RapidAPIConsume_WEBUI.DTOs.BookingDtos;
 using RapidAPIConsume_WEBUI.DTOs.GuestDtos;
 using RapidAPIConsume_WEBUI.DTOs.ServiceDtos;
@@ -24,6 +25,7 @@ namespace RapidAPIConsume_WEBUI.Mapping
             CreateMap<UpdateRoomDto, Room>().ReverseMap();
             CreateMap<AddGuestDto, Guest>().ReverseMap();
             CreateMap<UpdateGuestDto, Guest>().ReverseMap();
+            CreateMap<ListAppUserDto, AppUser>().ReverseMap();
         }
     }
 }

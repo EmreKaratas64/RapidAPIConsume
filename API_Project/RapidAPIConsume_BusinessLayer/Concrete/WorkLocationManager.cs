@@ -25,7 +25,7 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
 
         public WorkLocation TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _workLocationDal.GetById(id);
         }
 
         public void TInsert(WorkLocation entity)
