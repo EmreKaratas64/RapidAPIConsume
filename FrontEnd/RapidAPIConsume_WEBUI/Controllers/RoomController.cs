@@ -52,7 +52,7 @@ namespace RapidAPIConsume_WEBUI.Controllers
             return View();
         }
 
-        public async Task<IActionResult> DeleteRoomAsync(int id)
+        public async Task<IActionResult> DeleteRoom(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync($"http://localhost:5291/api/Room/{id}");

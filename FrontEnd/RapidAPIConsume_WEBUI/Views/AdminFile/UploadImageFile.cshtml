@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "UploadImageFile";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<div class="row">
+    @if (TempData["Success"]!= null)
+    {
+        <div class="alert alert-success alert-dismissible fade show col-12">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button> <strong>Bilgilendirme!</strong> @TempData["Success"]
+        </div>
+    }
+
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4>Resim Yükleme Formu</h4>
+            </div>
+            <div class="card-body">
+                 <form id="myForm" method="post" enctype="multipart/form-data">
+                    <input id="file" class="form-control" type="file" name="file" placeholder="Dosyayı yükleyiniz">
+                    <br />
+                    <button type="submit" class="btn btn-outline-info">Yükle</button>
+                </form>
+            </div>
+            <div class="card-footer">Uyarı!!<br /> Lütfen geçerli bir resim dosya uzantısı seçiniz</div>
+        </div>
+       
+    </div>
+
+</div>
+
+ <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get the form inputs
+            const fileInput = document.getElementById('file');
+
+            // Check if the inputs have valid data
+            const isFileValid = fileInput.files && fileInput.files.length > 0;
+
+            // If any of the inputs are invalid, prevent form submission
+            if (!isFileValid) {
+                alert('Please fill in all required fields with valid data.');
+            } else {
+                this.submit();
+            }
+        });
+    </script>

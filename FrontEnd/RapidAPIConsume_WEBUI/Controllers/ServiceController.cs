@@ -50,7 +50,7 @@ namespace RapidAPIConsume_WEBUI.Controllers
             return View(addServiceDto);
         }
 
-        public async Task<IActionResult> DeleteServiceAsync(int id)
+        public async Task<IActionResult> DeleteService(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync($"http://localhost:5291/api/Service/{id}");

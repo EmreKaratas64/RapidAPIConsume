@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RapidAPIConsume_EntityLayer.Concrete;
 using RapidAPIConsume_WEBUI.DTOs.BookingAPIDtos;
@@ -17,12 +18,14 @@ namespace RapidAPIConsume_WEBUI.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult AddBooking()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> AddBooking(AddBookingDto addBookingDto)
         {

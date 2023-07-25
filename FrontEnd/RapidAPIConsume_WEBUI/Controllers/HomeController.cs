@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RapidAPIConsume_EntityLayer.Concrete;
 using System.Text;
 
 namespace RapidAPIConsume_WEBUI.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -75,10 +77,14 @@ namespace RapidAPIConsume_WEBUI.Controllers
             var result = await client.PostAsync("http://localhost:5291/api/Contact", content);
             if (result.IsSuccessStatusCode)
             {
-                //var jsonContact = jsonData;
                 return Json(jsonData);
             }
             return RedirectToAction("ContactMessage");
+        }
+
+        public IActionResult Error404()
+        {
+            return View();
         }
     }
 }

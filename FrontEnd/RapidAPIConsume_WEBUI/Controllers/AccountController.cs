@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RapidAPIConsume_EntityLayer.Concrete;
 using RapidAPIConsume_WEBUI.DTOs.AccountDtos;
@@ -6,6 +7,7 @@ using RapidAPIConsume_WEBUI.Models;
 
 namespace RapidAPIConsume_WEBUI.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
@@ -64,15 +66,17 @@ namespace RapidAPIConsume_WEBUI.Controllers
             {
                 var user = await _userManager.FindByEmailAsync(loginDto.Mail);
                 if (user == null) return NotFound();
-                await _signInManager.PasswordSignInAsync(user, loginDto.Password, false, true);
-                return RedirectToAction("ListStaffs", "Staff");
+                var result = await _signInManager.PasswordSignInAsync(user.UserName, loginDto.Password, false, false);
+                if (result.Succeeded)
+                    return RedirectToAction("ListStaffs", "Staff");
             }
             return View(loginDto);
         }
 
-        public IActionResult LogOut()
+        public async Task<IActionResult> LogOut()
         {
-            return View();
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login");
         }
     }
 }

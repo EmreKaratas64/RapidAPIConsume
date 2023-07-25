@@ -47,7 +47,7 @@ namespace RapidAPIConsume_WEBUI.Controllers
             return View();
         }
 
-        public async Task<IActionResult> DeleteTestimonialAsync(int id)
+        public async Task<IActionResult> DeleteTestimonial(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync($"http://localhost:5291/api/Testimonial/{id}");
