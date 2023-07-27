@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xMaXN0Qm9va2luZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Dashboard/DashboardPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Guest/AddGuest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcQWRkR3Vlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -166,6 +170,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Service/ListServices.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxMaXN0U2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/AdminDashboardCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5EYXNoYm9hcmRDYXJkc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#-Asp_Projeler/RapidAPIConsume/FrontEnd/RapidAPIConsume_WEBUI/Views/Shared/Components/AdminMailLeftBox/Default.cshtml]

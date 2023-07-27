@@ -28,6 +28,11 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
             return _guestDal.GetById(id);
         }
 
+        public int TGuestCount()
+        {
+            return _guestDal.GuestCount();
+        }
+
         public void TInsert(Guest entity)
         {
             _guestDal.Insert(entity);

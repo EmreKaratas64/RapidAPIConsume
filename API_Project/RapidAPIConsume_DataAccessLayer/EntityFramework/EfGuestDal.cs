@@ -10,5 +10,11 @@ namespace RapidAPIConsume_DataAccessLayer.EntityFramework
         public EfGuestDal(Context context) : base(context)
         {
         }
+
+        public int GuestCount()
+        {
+            var context = new Context();
+            return context.Guests.Count();
+        }
     }
 }

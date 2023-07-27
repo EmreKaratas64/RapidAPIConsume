@@ -4,5 +4,6 @@ namespace RapidAPIConsume_BusinessLayer.Abstract
 {
     public interface IGuestService : IGenericService<Guest>
     {
+        int TGuestCount();
     }
 }

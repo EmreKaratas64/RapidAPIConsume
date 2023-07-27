@@ -22,6 +22,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("CountGuests")]
+        public IActionResult CountGuests()
+        {
+            var guests = _guestService.TGuestCount();
+            return Ok(guests);
+        }
+
         [HttpDelete("{id}")]
         public IActionResult GuestDelete(int id)
         {
