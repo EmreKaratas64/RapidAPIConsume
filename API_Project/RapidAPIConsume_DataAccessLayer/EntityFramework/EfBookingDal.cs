@@ -12,5 +12,11 @@ namespace RapidAPIConsume_DataAccessLayer.EntityFramework
         public EfBookingDal(Context context) : base(context)
         {
         }
+
+        public int BookingCount()
+        {
+            var context = new Context();
+            return context.Bookings.Count();
+        }
     }
 }

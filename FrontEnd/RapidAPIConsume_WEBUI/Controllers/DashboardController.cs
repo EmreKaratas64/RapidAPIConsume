@@ -13,9 +13,19 @@ namespace RapidAPIConsume_WEBUI.Controllers
 
         public async Task<IActionResult> DashboardPage()
         {
+
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:5291/api/Guest/CountGuests");
-            ViewBag.GuestNumber = await response.Content.ReadAsStringAsync();
+            var clients = await client.GetAsync("http://localhost:5291/api/Guest/CountGuests");
+            ViewBag.Guests = await clients.Content.ReadAsStringAsync();
+
+            var staffs = await client.GetAsync("http://localhost:5291/api/Staff/GetStaffCount");
+            ViewBag.Staffs = await staffs.Content.ReadAsStringAsync();
+
+            var bookings = await client.GetAsync("http://localhost:5291/api/Booking/GetBookingCount");
+            ViewBag.Bookings = await bookings.Content.ReadAsStringAsync();
+
+            var rooms = await client.GetAsync("http://localhost:5291/api/Room/GetRoomCount");
+            ViewBag.Rooms = await rooms.Content.ReadAsStringAsync();
             return View();
         }
     }

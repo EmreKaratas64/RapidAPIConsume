@@ -10,5 +10,11 @@ namespace RapidAPIConsume_DataAccessLayer.EntityFramework
         public EfStaffDal(Context context) : base(context)
         {
         }
+
+        public int StaffCount()
+        {
+            var context = new Context();
+            return context.Staffs.Count();
+        }
     }
 }

@@ -33,6 +33,11 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
             _staffDal.Insert(entity);
         }
 
+        public int TStaffCount()
+        {
+            return _staffDal.StaffCount();
+        }
+
         public void TUpdate(Staff entity)
         {
             _staffDal.Update(entity);

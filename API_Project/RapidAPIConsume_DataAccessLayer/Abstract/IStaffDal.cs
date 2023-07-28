@@ -5,5 +5,6 @@ namespace RapidAPIConsume_DataAccessLayer.Abstract
 {
     public interface IStaffDal : IGenericDal<Staff>
     {
+        int StaffCount();
     }
 }

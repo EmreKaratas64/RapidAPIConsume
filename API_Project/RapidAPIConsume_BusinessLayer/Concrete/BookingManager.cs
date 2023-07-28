@@ -13,6 +13,11 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
             _bookingDal = bookingDal;
         }
 
+        public int TBookingCount()
+        {
+            return _bookingDal.BookingCount();
+        }
+
         public void TDelete(Booking entity)
         {
             _bookingDal.Delete(entity);

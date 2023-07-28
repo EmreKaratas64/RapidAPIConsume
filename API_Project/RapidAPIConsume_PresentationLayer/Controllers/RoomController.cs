@@ -26,6 +26,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("GetRoomCount")]
+        public IActionResult GetRoomCount()
+        {
+            int value = _roomService.TRoomCount();
+            return Ok(value);
+        }
+
         [HttpDelete("{id}")]
         public IActionResult RoomDelete(int id)
         {

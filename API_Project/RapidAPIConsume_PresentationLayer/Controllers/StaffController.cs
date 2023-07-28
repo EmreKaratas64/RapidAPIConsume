@@ -22,6 +22,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("GetStaffCount")]
+        public IActionResult GetStaffCount()
+        {
+            int value = _staffService.TStaffCount();
+            return Ok(value);
+        }
+
         [HttpDelete("{id}")]
         public IActionResult StaffDelete(int id)
         {

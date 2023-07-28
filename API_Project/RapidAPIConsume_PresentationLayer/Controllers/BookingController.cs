@@ -22,6 +22,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("GetBookingCount")]
+        public IActionResult GetBookingCount()
+        {
+            int value = _bookingService.TBookingCount();
+            return Ok(value);
+        }
+
         [HttpDelete("{id}")]
         public IActionResult BookingDelete(int id)
         {
