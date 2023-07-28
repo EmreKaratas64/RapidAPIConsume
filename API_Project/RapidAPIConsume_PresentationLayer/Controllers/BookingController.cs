@@ -22,6 +22,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("Last6BookingList")]
+        public IActionResult Last6BookingList()
+        {
+            var values = _bookingService.TLast6Bookings();
+            return Ok(values);
+        }
+
         [HttpGet("GetBookingCount")]
         public IActionResult GetBookingCount()
         {

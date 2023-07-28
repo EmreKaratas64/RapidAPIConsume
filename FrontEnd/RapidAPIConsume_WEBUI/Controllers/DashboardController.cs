@@ -13,7 +13,6 @@ namespace RapidAPIConsume_WEBUI.Controllers
 
         public async Task<IActionResult> DashboardPage()
         {
-
             var client = _httpClientFactory.CreateClient();
             var clients = await client.GetAsync("http://localhost:5291/api/Guest/CountGuests");
             ViewBag.Guests = await clients.Content.ReadAsStringAsync();

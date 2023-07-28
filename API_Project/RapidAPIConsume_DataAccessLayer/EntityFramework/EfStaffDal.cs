@@ -11,6 +11,13 @@ namespace RapidAPIConsume_DataAccessLayer.EntityFramework
         {
         }
 
+        public List<Staff> Last4Staffs()
+        {
+            var context = new Context();
+            var values = context.Staffs.OrderByDescending(x => x.StaffID).Take(4).ToList();
+            return values;
+        }
+
         public int StaffCount()
         {
             var context = new Context();

@@ -22,6 +22,13 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok(values);
         }
 
+        [HttpGet("Last4StaffList")]
+        public IActionResult Last4StaffList()
+        {
+            var values = _staffService.TLast4Staffs();
+            return Ok(values);
+        }
+
         [HttpGet("GetStaffCount")]
         public IActionResult GetStaffCount()
         {

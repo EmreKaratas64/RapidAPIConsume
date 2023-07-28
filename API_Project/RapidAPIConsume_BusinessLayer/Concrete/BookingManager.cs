@@ -33,6 +33,11 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
             return _bookingDal.GetById(id);
         }
 
+        public List<Booking> TLast6Bookings()
+        {
+            return _bookingDal.Last6Bookings();
+        }
+
         public void TInsert(Booking entity)
         {
             _bookingDal.Insert(entity);

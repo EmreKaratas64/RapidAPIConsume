@@ -28,6 +28,11 @@ namespace RapidAPIConsume_BusinessLayer.Concrete
             return _staffDal.GetById(id);
         }
 
+        public List<Staff> TLast4Staffs()
+        {
+            return _staffDal.Last4Staffs();
+        }
+
         public void TInsert(Staff entity)
         {
             _staffDal.Insert(entity);
