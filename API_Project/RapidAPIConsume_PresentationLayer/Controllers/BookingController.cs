@@ -51,7 +51,7 @@ namespace RapidAPIConsume_PresentationLayer.Controllers
             return Ok();
         }
 
-        [HttpPut]
+        [HttpPut()]
         public IActionResult BookingUpdate(Booking Booking)
         {
             _bookingService.TUpdate(Booking);

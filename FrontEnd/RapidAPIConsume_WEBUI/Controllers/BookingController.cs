@@ -88,6 +88,35 @@ namespace RapidAPIConsume_WEBUI.Controllers
                 return NotFound();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> UpdateReservation(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"http://localhost:5291/api/Booking/{id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var value = JsonConvert.DeserializeObject<Booking>(jsonData);
+                return View(value);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateReservation(Booking booking)
+        {
+
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(booking);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PutAsync("http://localhost:5291/api/Booking/", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("ListBookings");
+            }
+            return View();
+        }
+
         public IActionResult FindBookingAPIDestID()
         {
             return View();

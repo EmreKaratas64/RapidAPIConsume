@@ -78,5 +78,36 @@ namespace RapidAPIConsume_WEBUI.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login");
         }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> AccountSettings()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (user == null) return NotFound();
+            AccountSettingsDto accountSettingsDto = new AccountSettingsDto();
+            accountSettingsDto.Email = user.Email;
+            accountSettingsDto.Name = user.Name;
+            accountSettingsDto.Surname = user.Surname;
+            return View(accountSettingsDto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AccountSettings(AccountSettingsDto accountSettingsDto)
+        {
+            var user = _userManager.Users.FirstOrDefault(x => x.Email == accountSettingsDto.Email);
+            if (user == null) return NotFound();
+            if (ModelState.IsValid)
+            {
+                user.Name = accountSettingsDto.Name;
+                user.Surname = accountSettingsDto.Surname;
+                user.UserName = accountSettingsDto.Email;
+                user.Email = accountSettingsDto.Email;
+                user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, accountSettingsDto.Password);
+                await _userManager.UpdateAsync(user);
+                return RedirectToAction("LogOut");
+            }
+            return View(accountSettingsDto);
+        }
     }
 }
