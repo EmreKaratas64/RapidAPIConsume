@@ -1673,10 +1673,6 @@
       "PackagePath": "staticwebassets\\adminweb\\images"
     },
     {
-      "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\adminweb\\images\\favicon.png",
-      "PackagePath": "staticwebassets\\adminweb\\images\\favicon.png"
-    },
-    {
       "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\adminweb\\images\\hand.jpg",
       "PackagePath": "staticwebassets\\adminweb\\images\\hand.jpg"
     },
@@ -20853,8 +20849,8 @@
       "PackagePath": "staticwebassets\\adminweb\\widgets.html"
     },
     {
-      "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
     },
     {
       "Id": "D:\\C#-Asp_Projeler\\RapidAPIConsume\\FrontEnd\\RapidAPIConsume_WEBUI\\wwwroot\\hotel-html-template\\LICENSE.txt",

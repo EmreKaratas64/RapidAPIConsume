@@ -1,6 +1,6 @@
 ﻿@model List<Contact> 
 @{
-    ViewData["Title"] = "ContactMessages";
+    ViewData["Title"] = "İletişim Mesajları";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
 }
 
@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="col-mail col-mail-2">
-                                    <div class="subject">@item.Message.Substring(0,120)</div>
+                                    <div class="subject">@item.Message.Substring(0,2)</div>
                                     <div class="date">@(((DateTime)(item.Date)).ToString("dd-MM-yyyy"))</div>
                                 </div>
                             </a>

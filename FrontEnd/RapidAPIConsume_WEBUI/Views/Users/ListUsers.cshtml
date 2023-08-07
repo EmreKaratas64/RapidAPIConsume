@@ -1,6 +1,6 @@
 ﻿@model List<ListAppUserDto>
 @{
-    ViewData["Title"] = "ListUsers";
+    ViewData["Title"] = "Kullanıcılar";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
     int count = 0;
 }
@@ -24,7 +24,6 @@
                                 <th>Ülke</th>
                                 <th>İş Departmanı</th>
                                 <th>İş Lokasyonu</th>
-                                 <th>Düzenle</th>
                                  <th>Rol Düzenle</th>
                             </tr>
                         </thead>
@@ -43,7 +42,6 @@
                                 </td>
                                  <td><span class="badge badge-warning px-2">@item.WorkLocation.WorkLocationCity</span>
                                 </td>
-                                <td><a href="/Users/GetUser/@item.Id" class="btn mb-1 btn-rounded btn-outline-success"><i class="fas fa-edit"></i></a></td>
                                 <td><a href="/Users/AssignRole/@item.Id" class="btn mb-1 btn-rounded btn-outline-dark"><i class="fas fa-edit"></i></a></td>
                            
                             </tr>
@@ -52,7 +50,6 @@
 
                         </tbody>
                     </table>
-                @*<a href="/Staff/AddStaff/" class="btn mb-1 btn-rounded btn-outline-info">Yeni Personel</a>*@
                 </div>
             </div>
         </div>
